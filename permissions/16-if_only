@@ -1,2 +1,5 @@
 #!/bin/bash
-chown --from=vincent bettty hello
+if [ "$(stat -c '%U' hello)" = "guillaume" ]; then
+    chown vincent hello
+    echo "vincent"
+fi
