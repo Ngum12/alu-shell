@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Import the random module
+import random
+
+# Generate two random numbers between 0 and 1000
+number1 = random.randint(0, 1000)
+number2 = random.randint(0, 1000)
+
+# Print the two numbers
+echo "The first random number generated is $number1"
+echo "The second random number generated is $number2"
+
+# Calculate the square roots of the two numbers
+sqrt_number1 = number1 ** 0.5
+sqrt_number2 = number2 ** 0.5
+
+# Print the square roots of the two numbers
+echo "The square root of the first number is $sqrt_number1"
+echo "The square root of the second number is $sqrt_number2"
+
+# Calculate the sum of the square roots of the two numbers
+sum_of_sqrts = sqrt_number1 + sqrt_number2
+
+# Print the sum of the square roots of the two numbers
+echo "The sum of their square roots is $sum_of_sqrts"
+
