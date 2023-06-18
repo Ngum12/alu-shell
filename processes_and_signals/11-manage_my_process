@@ -3,7 +3,6 @@
 #Check if the manage_my_process is already running
 PID_FILE="/var/run/my_process.pid"
 PROCESS_NAME="manage_my_process"
-
 start_process() {
     if [ -f "$PID_FILE" ]; then
         echo "$PROCESS_NAME is already running."
@@ -24,11 +23,9 @@ stop_process() {
         echo "$PROCESS_NAME is not running."
     fi
 }
-
 restart_process() {
 
-    echo "$PROCESS_NAME restarted"                                                                                                                     
-}
+    echo "$PROCESS_NAME restarted"                                                                                                                     }
 
 case "$1" in
     start)
@@ -45,5 +42,4 @@ case "$1" in
         exit 1
         ;;
 esac
-
-exit 0
+exit 
